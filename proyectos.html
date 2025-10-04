@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos I&D - IMCI | Instituto de Motores de Combustión Interna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📧 info@imci.edu.pe</span>
+                    <span>📞 482-5927</span>
+                </div>
+                <div class="header-links">
+                    <span>🕒 Lun - Vie: 8:00 - 18:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <div class="logo">IMCI</div>
+                        <div class="brand-text">
+                            <h1>IMCI</h1>
+                            <p>Instituto de Motores de Combustión Interna</p>
+                        </div>
+                    </div>
+                    
+                    <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Presentación</a>
+                        <div class="dropdown">
+                            <a href="index.html#institucional" class="dropdown-item">Institucional</a>
+                            <a href="index.html#objetivos" class="dropdown-item">Objetivos</a>
+                            <a href="index.html#historia" class="dropdown-item">Historia</a>
+                            <a href="index.html#organigrama" class="dropdown-item">Organigrama</a>
+                            <a href="index.html#miembros" class="dropdown-item">Miembros</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Proyectos I&D</a>
+                        <div class="dropdown">
+                            <a href="proyectos.html#altura" class="dropdown-item">Investigaciones en condiciones de altura</a>
+                            <a href="proyectos.html#biogas-interna" class="dropdown-item">El uso del Biogas en Motores de Combustión Interna</a>
+                            <a href="proyectos.html#biogas-diesel" class="dropdown-item">El uso del Biogas en Motores Diesel</a>
+                            <a href="proyectos.html#glp-diesel" class="dropdown-item">El uso de GLP en Motores Diesel</a>
+                            <a href="proyectos.html#biodiesel-diesel" class="dropdown-item">El uso de Biodiesel en Motores Diesel</a>
+                            <a href="proyectos.html#hidrodinamico" class="dropdown-item">Modelos Matemáticos de Procesos Hidrodinámicos</a>
+                            <a href="proyectos.html#stirling" class="dropdown-item">Motores Stirling</a>
+                            <a href="proyectos.html#electrogeno" class="dropdown-item">Grupo Electrógeno de 6 Kw a GLP</a>
+                            <a href="proyectos.html#moto-glp" class="dropdown-item">Mototaxis a GLP</a>
+                            <a href="proyectos.html#auto-glp" class="dropdown-item">Automóviles "Tico" a GLP</a>
+                            <a href="proyectos.html#mat-diesel" class="dropdown-item">Modelo Matemático para Motores Diesel</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Infraestructura</a>
+                        <div class="dropdown">
+                            <a href="infraestructura.html#ricardo" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Ricardo</a>
+                            <a href="infraestructura.html#petter" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Petter</a>
+                            <a href="infraestructura.html#lister" class="dropdown-item">Banco de Pruebas - Motor LISTER</a>
+                            <a href="infraestructura.html#honda" class="dropdown-item">Banco de Pruebas - Motor HONDA 3500</a>
+                            <a href="infraestructura.html#perkins" class="dropdown-item">Banco de Pruebas - Motor PERKINS</a>
+                            <a href="infraestructura.html#grieve" class="dropdown-item">Motor GRIEVE</a>
+                            <a href="infraestructura.html#sachs" class="dropdown-item">Banco de Pruebas CUSSONS – Motor SACHS</a>
+                            <a href="infraestructura.html#bomba" class="dropdown-item">Banco de Bombas de Inyección</a>
+                            <a href="infraestructura.html#freno" class="dropdown-item">Freno dinamométrico Soft Engine</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos Técnicos</a>
+                        <div class="dropdown">
+                            <a href="cursos.html#course-1" class="dropdown-item">MCI a gasolina - Estructura y función</a>
+                            <a href="cursos.html#course-2" class="dropdown-item">MCI diesel - Estructura y función</a>
+                            <a href="cursos.html#course-3" class="dropdown-item">MCI a gasolina - Diagnóstico de sistemas</a>
+                            <a href="cursos.html#course-4" class="dropdown-item">MCI diesel - Diagnóstico de sistemas</a>
+                            <a href="cursos.html#course-5" class="dropdown-item">MCI a gasolina - Reparación del motor</a>
+                            <a href="cursos.html#course-6" class="dropdown-item">MCI diesel - Reparación del motor</a>
+                            <a href="cursos.html#course-7" class="dropdown-item">Electricidad y Electrónica Automotriz</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="clientes.html" class="nav-link">Clientes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="informes.html" class="nav-link">Informes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="fade-in-up">Proyectos de Investigación & Desarrollo</h1>
+                <p class="fade-in-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Desarrollamos tecnologías innovadoras para motores de combustión interna, enfocándonos en eficiencia energética y sostenibilidad ambiental.</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterProjects('all')">Todos los Proyectos</button>
+                    <button class="filter-btn" onclick="filterProjects('combustibles')">Combustibles Alternativos</button>
+                    <button class="filter-btn" onclick="filterProjects('diesel')">Motores Diesel</button>
+                    <button class="filter-btn" onclick="filterProjects('modelado')">Modelado Matemático</button>
+                    <button class="filter-btn" onclick="filterProjects('innovacion')">Innovación Tecnológica</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <div class="container">
+                
+                <!-- Proyecto 1: Investigaciones en condiciones de altura -->
+                <div class="project-item" data-category="innovacion" id="altura">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-category">Investigación Aplicada</div>
+                            <h3 class="project-title">Investigaciones en Condiciones de Altura</h3>
+                            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">🏔️</div>
+                                <div class="carousel-slide">📊</div>
+                                <div class="carousel-slide">🔬</div>
+                                <div class="carousel-slide">⚙️</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: El uso del Biogas en Motores de Combustión Interna -->
+                <div class="project-item" data-category="combustibles" id="biogas-interna">
+                    <div class="project-content">
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">🌱</div>
+                                <div class="carousel-slide">⚡</div>
+                                <div class="carousel-slide">🔧</div>
+                                <div class="carousel-slide">📈</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                        <div class="project-text">
+                            <div class="project-category">Combustibles Sostenibles</div>
+                            <h3 class="project-title">El uso del Biogás en Motores de Combustión Interna</h3>
+                            <p class="project-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: El uso del Biogas en Motores Diesel -->
+                <div class="project-item" data-category="diesel combustibles" id="biogas-diesel">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-category">Motores Diesel Híbridos</div>
+                            <h3 class="project-title">El uso del Biogás en Motores Diesel</h3>
+                            <p class="project-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        </div>
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">🛢️</div>
+                                <div class="carousel-slide">🌿</div>
+                                <div class="carousel-slide">🔋</div>
+                                <div class="carousel-slide">🚛</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: El uso de GLP en Motores Diesel -->
+                <div class="project-item" data-category="diesel combustibles" id="glp-diesel">
+                    <div class="project-content">
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">⛽</div>
+                                <div class="carousel-slide">🚗</div>
+                                <div class="carousel-slide">💨</div>
+                                <div class="carousel-slide">📋</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                        <div class="project-text">
+                            <div class="project-category">Gas Licuado de Petróleo</div>
+                            <h3 class="project-title">El uso de GLP en Motores Diesel</h3>
+                            <p class="project-description">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5: El uso de Biodiesel en Motores Diesel -->
+                <div class="project-item" data-category="diesel combustibles" id="biodiesel-diesel">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-category">Biodiesel y Sostenibilidad</div>
+                            <h3 class="project-title">El uso de Biodiesel en Motores Diesel</h3>
+                            <p class="project-description">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">🌾</div>
+                                <div class="carousel-slide">♻️</div>
+                                <div class="carousel-slide">🚜</div>
+                                <div class="carousel-slide">🌍</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6: Modelos Matemáticos de Procesos Hidrodinámicos -->
+                <div class="project-item" data-category="modelado" id="hidrodinamico">
+                    <div class="project-content">
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">📐</div>
+                                <div class="carousel-slide">💻</div>
+                                <div class="carousel-slide">📊</div>
+                                <div class="carousel-slide">⚗️</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                        <div class="project-text">
+                            <div class="project-category">Modelado Matemático</div>
+                            <h3 class="project-title">Modelos Matemáticos de Procesos Hidrodinámicos de Sistemas de Inyección Diesel Lineales</h3>
+                            <p class="project-description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 7: Motores Stirling -->
+                <div class="project-item" data-category="innovacion" id="stirling">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-category">Innovación Tecnológica</div>
+                            <h3 class="project-title">Motores Stirling</h3>
+                            <p class="project-description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                        </div>
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">🔥</div>
+                                <div class="carousel-slide">🔧</div>
+                                <div class="carousel-slide">⚙️</div>
+                                <div class="carousel-slide">🌡️</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 8: Grupo Electrógeno de 6 Kw a GLP -->
+                <div class="project-item" data-category="combustibles innovacion" id="electrogeno">
+                    <div class="project-content">
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">⚡</div>
+                                <div class="carousel-slide">🏭</div>
+                                <div class="carousel-slide">🔌</div>
+                                <div class="carousel-slide">⛽</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                        <div class="project-text">
+                            <div class="project-category">Generación Eléctrica</div>
+                            <h3 class="project-title">Grupo Electrógeno de 6 Kw a GLP</h3>
+                            <p class="project-description">Sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 9: Mototaxis a GLP -->
+                <div class="project-item" data-category="combustibles" id="moto-glp">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-category">Transporte Sostenible</div>
+                            <h3 class="project-title">Mototaxis a GLP</h3>
+                            <p class="project-description">Omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur.</p>
+                        </div>
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">🛺</div>
+                                <div class="carousel-slide">🌱</div>
+                                <div class="carousel-slide">🚦</div>
+                                <div class="carousel-slide">💰</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 10: Automóviles "Tico" a GLP -->
+                <div class="project-item" data-category="combustibles" id="auto-glp">
+                    <div class="project-content">
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">🚗</div>
+                                <div class="carousel-slide">⛽</div>
+                                <div class="carousel-slide">🔧</div>
+                                <div class="carousel-slide">🌿</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                        <div class="project-text">
+                            <div class="project-category">Conversión Automotriz</div>
+                            <h3 class="project-title">Automóviles "Tico" a GLP</h3>
+                            <p class="project-description">Aut perferendis doloribus asperiores repellat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 11: Modelo Matemático para Motores Diesel -->
+                <div class="project-item" data-category="modelado diesel" id="mat-diesel">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <div class="project-category">Simulación y Modelado</div>
+                            <h3 class="project-title">Modelo Matemático para Motores Diesel de Aspiración Natural</h3>
+                            <p class="project-description">Aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                        <div class="project-carousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide active">🧮</div>
+                                <div class="carousel-slide">🖥️</div>
+                                <div class="carousel-slide">📈</div>
+                                <div class="carousel-slide">🛠️</div>
+                            </div>
+                            <div class="carousel-nav">
+                                <div class="carousel-dot active" onclick="goToSlide(this, 0)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 1)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 2)"></div>
+                                <div class="carousel-dot" onclick="goToSlide(this, 3)"></div>
+                            </div>
+                            <button class="carousel-arrow prev" onclick="prevSlide(this)">‹</button>
+                            <button class="carousel-arrow next" onclick="nextSlide(this)">›</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Instituto IMCI</h3>
+                    <p>Somos un centro de investigación especializado en motores de combustión interna, dedicado al desarrollo de tecnologías sostenibles y eficientes para el sector automotriz e industrial.</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">🐦</a>
+                        <a href="#">💼</a>
+                        <a href="#">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Av. Universitaria 1801, Lima - Perú</p>
+                    <p>📞 482-5927</p>
+                    <p>📞 481-1070 #4429</p>
+                    <p>Horarios:<br>
+                    Lunes a Viernes: 8:00 - 18:00<br>
+                    Sábados: 8:00 - 13:00</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p> &copy; 2025 Instituto de Motores de Combustión Interna (IMCI). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

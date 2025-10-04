@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Técnicos - IMCI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📧 info@imci.edu.pe</span>
+                    <span>📞 482-5927</span>
+                </div>
+                <div class="header-links">
+                    <span>🕒 Lun - Vie: 8:00 - 18:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <div class="logo">IMCI</div>
+                        <div class="brand-text">
+                            <h1>IMCI</h1>
+                            <p>Instituto de Motores de Combustión Interna</p>
+                        </div>
+                    </div>
+                    
+                    <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Presentación</a>
+                        <div class="dropdown">
+                            <a href="index.html#institucional" class="dropdown-item">Institucional</a>
+                            <a href="index.html#objetivos" class="dropdown-item">Objetivos</a>
+                            <a href="index.html#historia" class="dropdown-item">Historia</a>
+                            <a href="index.html#organigrama" class="dropdown-item">Organigrama</a>
+                            <a href="index.html#miembros" class="dropdown-item">Miembros</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Proyectos I&D</a>
+                        <div class="dropdown">
+                            <a href="proyectos.html#altura" class="dropdown-item">Investigaciones en condiciones de altura</a>
+                            <a href="proyectos.html#biogas-interna" class="dropdown-item">El uso del Biogas en Motores de Combustión Interna</a>
+                            <a href="proyectos.html#biogas-diesel" class="dropdown-item">El uso del Biogas en Motores Diesel</a>
+                            <a href="proyectos.html#glp-diesel" class="dropdown-item">El uso de GLP en Motores Diesel</a>
+                            <a href="proyectos.html#biodiesel-diesel" class="dropdown-item">El uso de Biodiesel en Motores Diesel</a>
+                            <a href="proyectos.html#hidrodinamico" class="dropdown-item">Modelos Matemáticos de Procesos Hidrodinámicos</a>
+                            <a href="proyectos.html#stirling" class="dropdown-item">Motores Stirling</a>
+                            <a href="proyectos.html#electrogeno" class="dropdown-item">Grupo Electrógeno de 6 Kw a GLP</a>
+                            <a href="proyectos.html#moto-glp" class="dropdown-item">Mototaxis a GLP</a>
+                            <a href="proyectos.html#auto-glp" class="dropdown-item">Automóviles "Tico" a GLP</a>
+                            <a href="proyectos.html#mat-diesel" class="dropdown-item">Modelo Matemático para Motores Diesel</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Infraestructura</a>
+                        <div class="dropdown">
+                            <a href="infraestructura.html#ricardo" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Ricardo</a>
+                            <a href="infraestructura.html#petter" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Petter</a>
+                            <a href="infraestructura.html#lister" class="dropdown-item">Banco de Pruebas - Motor LISTER</a>
+                            <a href="infraestructura.html#honda" class="dropdown-item">Banco de Pruebas - Motor HONDA 3500</a>
+                            <a href="infraestructura.html#perkins" class="dropdown-item">Banco de Pruebas - Motor PERKINS</a>
+                            <a href="infraestructura.html#grieve" class="dropdown-item">Motor GRIEVE</a>
+                            <a href="infraestructura.html#sachs" class="dropdown-item">Banco de Pruebas CUSSONS – Motor SACHS</a>
+                            <a href="infraestructura.html#bomba" class="dropdown-item">Banco de Bombas de Inyección</a>
+                            <a href="infraestructura.html#freno" class="dropdown-item">Freno dinamométrico Soft Engine</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos Técnicos</a>
+                        <div class="dropdown">
+                            <a href="cursos.html#course-1" class="dropdown-item">MCI a gasolina - Estructura y función</a>
+                            <a href="cursos.html#course-2" class="dropdown-item">MCI diesel - Estructura y función</a>
+                            <a href="cursos.html#course-3" class="dropdown-item">MCI a gasolina - Diagnóstico de sistemas</a>
+                            <a href="cursos.html#course-4" class="dropdown-item">MCI diesel - Diagnóstico de sistemas</a>
+                            <a href="cursos.html#course-5" class="dropdown-item">MCI a gasolina - Reparación del motor</a>
+                            <a href="cursos.html#course-6" class="dropdown-item">MCI diesel - Reparación del motor</a>
+                            <a href="cursos.html#course-7" class="dropdown-item">Electricidad y Electrónica Automotriz</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="clientes.html" class="nav-link">Clientes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="informes.html" class="nav-link">Informes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Course Overview -->
+    <section class="course-overview">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Por qué elegir nuestros cursos?</h2>
+                <p>Contamos con más de 30 años de experiencia en investigación y desarrollo de motores de combustión interna</p>
+            </div>
+            
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-icon">🔧</div>
+                    <h3>Práctica Especializada</h3>
+                    <p>Acceso directo a nuestros laboratorios y bancos de pruebas de última generación para experiencia práctica real.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <div class="overview-icon">👨‍🔬</div>
+                    <h3>Instructores Expertos</h3>
+                    <p>Profesores e investigadores con amplia experiencia en la industria automotriz y desarrollo tecnológico.</p>
+                </div>
+                
+                <div class="overview-card">
+                    <div class="overview-icon">📜</div>
+                    <h3>Certificación Reconocida</h3>
+                    <p>Certificados con validez profesional reconocidos por instituciones y empresas del sector automotriz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Catálogo de Cursos</h2>
+                <p>Programas especializados diseñados para diferentes niveles de experiencia</p>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Curso 1 -->
+                <div class="course-card" id="course-1">
+                    <div class="course-header">
+                        <div class="course-category">Motores a Gasolina - Nivel Básico</div>
+                        <h3 class="course-title">MCI a Gasolina - Estructura y Función</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Se introduce en el campo de los motores, ya que se le enseña cómo están constituidos, cómo funcionan, cómo funcionan sus sistemas auxiliares, es decir, los sistemas de alimentación de combustible, de lubricación, de refrigeración y otros. Podrá identificar y saber la diferencia entre un motor gasolinero, un motor Diesel y un motor a gas.
+                        </p>
+                        
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">⏱️</div>
+                                <span>50 horas académicas</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">👥</div>
+                                <span>Máx. 10 participantes</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">🎯</div>
+                                <span>Nivel Intermedio-Avanzado</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">📅</div>
+                                <span>Modalidad Presencial</span>
+                            </div>
+                        </div>
+
+                        <div class="course-topics">
+                            <h4>Temas Principales:</h4>
+                            <div class="topics-list">
+                                <div class="topic-item">Conceptos básicos de MCI</div>
+                                <div class="topic-item">Sistema de distribución</div>
+                                <div class="topic-item">Sistema de refrigeración</div>
+                                <div class="topic-item">Sistema de alimentación</div>
+                                <div class="topic-item">Sistema de encendido</div>
+                                <div class="topic-item">Sistemas de carga y arranque</div>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <button class="btn-brochure" onclick="openPreview('preview1')">
+                                📄 Brochure
+                            </button>
+                            <a href="https://wa.me/51987654321?text=Solicito información sobre el curso: MCI a Gasolina - Diagnóstico de Sistemas" target="_blank" class="btn-informes">
+                                📞 Informes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="course-card" id="course-2">
+                    <div class="course-header">
+                        <div class="course-category">Motores Diesel - Nivel Básico</div>
+                        <h3 class="course-title">MCI Diesel - Estructura y Función</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Incide en los principios de funcionamiento de estos sistemas. Describe y explica la totalidad de los componentes de los diferentes sistemas de inyección de motores Diesel (principalmente automotrices) y su forma de actuación. Capacita para aprender cómo funcionan los sistemas de inyección Diesel y poder proceder a su manipulación de forma eficiente.
+                        </p>
+                        
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">⏱️</div>
+                                <span>55 horas académicas</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">👥</div>
+                                <span>Máx. 8 participantes</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">🎯</div>
+                                <span>Nivel Intermedio-Avanzado</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">📅</div>
+                                <span>Modalidad Presencial</span>
+                            </div>
+                        </div>
+
+                        <div class="course-topics">
+                            <h4>Temas Principales:</h4>
+                            <div class="topics-list">
+                                <div class="topic-item">Proceso de combustión Diesel</div>
+                                <div class="topic-item">Inyectores de espiga y orificios</div>
+                                <div class="topic-item">Bomba rotativa y lineal</div>
+                                <div class="topic-item">Banco de pruebas</div>
+                                <div class="topic-item">Sistema PT y GM</div>
+                                <div class="topic-item">Uso del opacímetro</div>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <button class="btn-brochure" onclick="openPreview('preview2')">
+                                📄 Brochure
+                            </button>
+                            <a href="https://wa.me/51987654321?text=Solicito información sobre el curso: MCI Diesel - Estructura y Función" target="_blank" class="btn-informes">
+                                📞 Informes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="course-card" id="course-3">
+                    <div class="course-header">
+                        <div class="course-category">Motores a Gasolina - Nivel Intermedio</div>
+                        <h3 class="course-title">MCI a Gasolina - Diagnóstico de Sistemas</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Se describen los componentes principales y los sistemas auxiliares de los motores. Se explica el principio de funcionamiento de estos componentes y sistemas. Se enseña a efectuar el diagnóstico y el mantenimiento de estos motores. Se enseña a aplicar las técnicas y los programas de mantenimiento en los motores con la ayuda de instrumentos y herramientas modernos y apropiados.
+                        </p>
+                        
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">⏱️</div>
+                                <span>60 horas académicas</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">👥</div>
+                                <span>Máx. 8 participantes</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">🎯</div>
+                                <span>Nivel Avanzado</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">📅</div>
+                                <span>Modalidad Presencial</span>
+                            </div>
+                        </div>
+
+                        <div class="course-topics">
+                            <h4>Temas Principales:</h4>
+                            <div class="topics-list">
+                                <div class="topic-item">Diagnóstico con instrumentos</div>
+                                <div class="topic-item">Reparación de culata</div>
+                                <div class="topic-item">Sistema de distribución</div>
+                                <div class="topic-item">Sistema de lubricación</div>
+                                <div class="topic-item">Mantenimiento del motor</div>
+                                <div class="topic-item">Sistema de refrigeración</div>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <button class="btn-brochure" onclick="openPreview('preview3')">
+                                📄 Brochure
+                            </button>
+                            <a href="https://wa.me/51987654321?text=Solicito información sobre el curso: MCI Diesel - Estructura y Función" target="_blank" class="btn-informes">
+                                📞 Informes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 4 -->
+                <div class="course-card" id="course-4">
+                    <div class="course-header">
+                        <div class="course-category">Motores Diesel - Nivel Intermedio</div>
+                        <h3 class="course-title">MCI Diesel - Diagnóstico de Sistemas</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Se describen los componentes principales y los sistemas auxiliares de los motores Diesel. Se explica el principio de funcionamiento de estos componentes y sistemas. Se enseña a efectuar el diagnóstico y la reparación de los motores Diesel. Se enseña a aplicar las técnicas y los programas de mantenimiento en los motores Diesel con la ayuda de instrumentos y herramientas modernos y apropiados.
+                        </p>
+                        
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">⏱️</div>
+                                <span>45 horas académicas</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">👥</div>
+                                <span>Máx. 12 participantes</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">🎯</div>
+                                <span>Nivel Básico-Intermedio</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">📅</div>
+                                <span>Modalidad Presencial</span>
+                            </div>
+                        </div>
+
+                        <div class="course-topics">
+                            <h4>Temas Principales:</h4>
+                            <div class="topics-list">
+                                <div class="topic-item">Diagnóstico de averías</div>
+                                <div class="topic-item">Sistema de refrigeración</div>
+                                <div class="topic-item">Culata y válvulas</div>
+                                <div class="topic-item">Sistema de distribución</div>
+                                <div class="topic-item">Sistema de lubricación</div>
+                                <div class="topic-item">Mantenimiento preventivo</div>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <button class="btn-brochure" onclick="openPreview('preview4')">
+                                📄 Brochure
+                            </button>
+                            <a href="https://wa.me/51987654321?text=Solicito información sobre el curso: MCI Diesel - Estructura y Función" target="_blank" class="btn-informes">
+                                📞 Informes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 5 -->
+                <div class="course-card" id="course-5">
+                    <div class="course-header">
+                        <div class="course-category">Motores a Gasolina - Nivel Avanzado</div>
+                        <h3 class="course-title">MCI a Gasolina - Reparación del Motor</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Está orientado a capacitar y actualizar a los técnicos, jóvenes estudiantes y trabajadores en el ramo automotriz. Incluye diagnóstico del estado de funcionamiento de un motor, procesos de medición, nomenclatura de las partes de un motor, proceso de desarmado de las partes, análisis de los desgastes, proceso de armado y funcionamiento.
+                        </p>
+                        
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">⏱️</div>
+                                <span>55 horas académicas</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">👥</div>
+                                <span>Máx. 8 participantes</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">🎯</div>
+                                <span>Nivel Intermedio-Avanzado</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">📅</div>
+                                <span>Modalidad Presencial</span>
+                            </div>
+                        </div>
+
+                        <div class="course-topics">
+                            <h4>Temas Principales:</h4>
+                            <div class="topics-list">
+                                <div class="topic-item">Metrología e instrumentos</div>
+                                <div class="topic-item">Diagnóstico funcional</div>
+                                <div class="topic-item">Desgastes y rectificados</div>
+                                <div class="topic-item">Sincronización de distribución</div>
+                                <div class="topic-item">Armado de motor completo</div>
+                                <div class="topic-item">Asentamiento del motor</div>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <button class="btn-brochure" onclick="openPreview('preview5')">
+                                📄 Brochure
+                            </button>
+                            <a href="https://wa.me/51987654321?text=Solicito información sobre el curso: MCI Diesel - Diagnóstico de Sistemas" target="_blank" class="btn-informes">
+                                📞 Informes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 6 -->
+                <div class="course-card" id="course-6">
+                    <div class="course-header">
+                        <div class="course-category">Motores Diesel - Nivel Avanzado</div>
+                        <h3 class="course-title">MCI Diesel - Reparación del Motor</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            Está orientado a capacitar y actualizar a los técnicos, jóvenes estudiantes y trabajadores en el ramo automotriz. Incluye diagnóstico del estado de funcionamiento de un motor diesel, procesos de medición, nomenclatura de las partes de un motor, proceso de desarmado de las partes, análisis de los desgastes, proceso de armado y funcionamiento.
+                        </p>
+                        
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">⏱️</div>
+                                <span>55 horas académicas</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">👥</div>
+                                <span>Máx. 8 participantes</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">🎯</div>
+                                <span>Nivel Intermedio-Avanzado</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">📅</div>
+                                <span>Modalidad Presencial</span>
+                            </div>
+                        </div>
+
+                        <div class="course-topics">
+                            <h4>Temas Principales:</h4>
+                            <div class="topics-list">
+                                <div class="topic-item">Metrología e instrumentos</div>
+                                <div class="topic-item">Diagnóstico funcional</div>
+                                <div class="topic-item">Desgastes y rectificados</div>
+                                <div class="topic-item">Sincronización de distribución</div>
+                                <div class="topic-item">Armado de motor completo</div>
+                                <div class="topic-item">Asentamiento del motor</div>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <button class="btn-brochure" onclick="openPreview('preview6')">
+                                📄 Brochure
+                            </button>
+                            <a href="https://wa.me/51987654321?text=Solicito información sobre el curso: MCI Diesel - Diagnóstico de Sistemas" target="_blank" class="btn-informes">
+                                📞 Informes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curso 7 -->
+                <div class="course-card" id="course-7">
+                    <div class="course-header">
+                        <div class="course-category">Electricidad</div>
+                        <h3 class="course-title">Electricidad y Electrónica Automotriz</h3>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">
+                            El curso está orientado al estudio de la electricidad y la electrónica aplicada a los automóviles, su diagnóstico, reparación y mantenimiento de equipos eléctricos y electrónicos. Los alumnos adquirirán un conocimiento absoluto y profesional de los sistemas eléctricos del automóvil. Dirigido a todas aquellas personas que necesitan formarse para conseguir un puesto de trabajo, o ampliar sus capacidades para adaptarse a las nuevas necesidades que surjan en su empresa.
+                        </p>
+                        
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">⏱️</div>
+                                <span>55 horas académicas</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">👥</div>
+                                <span>Máx. 8 participantes</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">🎯</div>
+                                <span>Nivel Intermedio-Avanzado</span>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">📅</div>
+                                <span>Modalidad Presencial</span>
+                            </div>
+                        </div>
+
+                        <div class="course-topics">
+                            <h4>Temas Principales:</h4>
+                            <div class="topics-list">
+                                <div class="topic-item">Circuitos eléctricos y electrónicos</div>
+                                <div class="topic-item">Mantenimiento de baterías</div>
+                                <div class="topic-item">Alternadores y reguladores</div>
+                                <div class="topic-item">Sistema de arranque</div>
+                                <div class="topic-item">Sistema de encendidon</div>
+                                <div class="topic-item">Semiconductores y electrónica</div>
+                            </div>
+                        </div>
+
+                        <div class="course-actions">
+                            <button class="btn-brochure" onclick="openPreview('preview7')">
+                                📄 Brochure
+                            </button>
+                            <a href="https://wa.me/51987654321?text=Solicito información sobre el curso: MCI Diesel - Diagnóstico de Sistemas" target="_blank" class="btn-informes">
+                                📞 Informes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Previews/Modals para cada curso -->
+    <div id="preview1" class="preview">
+        <div class="preview-content">
+            <button class="preview-close-btn" onclick="closePreview('preview1')">×</button>
+            <img src="https://via.placeholder.com/800x1000/dc3545/ffffff?text=Brochure+MCI+Gasolina+Estructura" alt="Brochure Curso 1" class="preview-image">
+        </div>
+    </div>
+
+    <div id="preview2" class="preview">
+        <div class="preview-content">
+            <button class="preview-close-btn" onclick="closePreview('preview2')">×</button>
+            <img src="https://via.placeholder.com/800x1000/2d2d2d/ffffff?text=Brochure+MCI+Diesel+Estructura" alt="Brochure Curso 2" class="preview-image">
+        </div>
+    </div>
+
+    <div id="preview3" class="preview">
+        <div class="preview-content">
+            <button class="preview-close-btn" onclick="closePreview('preview3')">×</button>
+            <img src="https://via.placeholder.com/800x1000/dc3545/ffffff?text=Brochure+Gasolina+Diagnostico" alt="Brochure Curso 3" class="preview-image">
+        </div>
+    </div>
+
+    <div id="preview4" class="preview">
+        <div class="preview-content">
+            <button class="preview-close-btn" onclick="closePreview('preview4')">×</button>
+            <img src="https://via.placeholder.com/800x1000/2d2d2d/ffffff?text=Brochure+Diesel+Diagnostico" alt="Brochure Curso 4" class="preview-image">
+        </div>
+    </div>
+
+    <div id="preview4" class="preview">
+        <div class="preview-content">
+            <button class="preview-close-btn" onclick="closePreview('preview5')">×</button>
+            <img src="https://via.placeholder.com/800x1000/2d2d2d/ffffff?text=Brochure+Diesel+Diagnostico" alt="Brochure Curso 4" class="preview-image">
+        </div>
+    </div>
+
+    <div id="preview4" class="preview">
+        <div class="preview-content">
+            <button class="preview-close-btn" onclick="closePreview('preview6')">×</button>
+            <img src="https://via.placeholder.com/800x1000/2d2d2d/ffffff?text=Brochure+Diesel+Diagnostico" alt="Brochure Curso 4" class="preview-image">
+        </div>
+    </div>
+
+    <div id="preview4" class="preview">
+        <div class="preview-content">
+            <button class="preview-close-btn" onclick="closePreview('preview7')">×</button>
+            <img src="https://via.placeholder.com/800x1000/2d2d2d/ffffff?text=Brochure+Diesel+Diagnostico" alt="Brochure Curso 4" class="preview-image">
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para Avanzar en tu Carrera?</h2>
+                <p>Únete a más de 1,500 profesionales que han confiado en nuestra formación especializada</p>
+                <a href="#" class="btn-primary">Solicitar Información</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Instituto IMCI</h3>
+                    <p>Somos un centro de investigación especializado en motores de combustión interna, dedicado al desarrollo de tecnologías sostenibles y eficientes para el sector automotriz e industrial.</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">🐦</a>
+                        <a href="#">💼</a>
+                        <a href="#">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Av. Universitaria 1801, Lima - Perú</p>
+                    <p>📞 482-5927</p>
+                    <p>📞 481-1070 #4429</p>
+                    <p>Horarios:<br>
+                    Lunes a Viernes: 8:00 - 18:00<br>
+                    Sábados: 8:00 - 13:00</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p> &copy; 2025 Instituto de Motores de Combustión Interna (IMCI). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

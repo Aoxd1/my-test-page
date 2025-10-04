@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación - IMCI | Instituto de Motores de Combustión Interna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📧 info@imci.edu.pe</span>
+                    <span>📞 482-5927</span>
+                </div>
+                <div class="header-links">
+                    <span>🕒 Lun - Vie: 8:00 - 18:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <div class="logo">IMCI</div>
+                        <div class="brand-text">
+                            <h1>IMCI</h1>
+                            <p>Instituto de Motores de Combustión Interna</p>
+                        </div>
+                    </div>
+                    
+                    <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Presentación</a>
+                        <div class="dropdown">
+                            <a href="index.html#institucional" class="dropdown-item">Institucional</a>
+                            <a href="index.html#objetivos" class="dropdown-item">Objetivos</a>
+                            <a href="index.html#historia" class="dropdown-item">Historia</a>
+                            <a href="index.html#organigrama" class="dropdown-item">Organigrama</a>
+                            <a href="index.html#miembros" class="dropdown-item">Miembros</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Proyectos I&D</a>
+                        <div class="dropdown">
+                            <a href="proyectos.html#altura" class="dropdown-item">Investigaciones en condiciones de altura</a>
+                            <a href="proyectos.html#biogas-interna" class="dropdown-item">El uso del Biogas en Motores de Combustión Interna</a>
+                            <a href="proyectos.html#biogas-diesel" class="dropdown-item">El uso del Biogas en Motores Diesel</a>
+                            <a href="proyectos.html#glp-diesel" class="dropdown-item">El uso de GLP en Motores Diesel</a>
+                            <a href="proyectos.html#biodiesel-diesel" class="dropdown-item">El uso de Biodiesel en Motores Diesel</a>
+                            <a href="proyectos.html#hidrodinamico" class="dropdown-item">Modelos Matemáticos de Procesos Hidrodinámicos</a>
+                            <a href="proyectos.html#stirling" class="dropdown-item">Motores Stirling</a>
+                            <a href="proyectos.html#electrogeno" class="dropdown-item">Grupo Electrógeno de 6 Kw a GLP</a>
+                            <a href="proyectos.html#moto-glp" class="dropdown-item">Mototaxis a GLP</a>
+                            <a href="proyectos.html#auto-glp" class="dropdown-item">Automóviles "Tico" a GLP</a>
+                            <a href="proyectos.html#mat-diesel" class="dropdown-item">Modelo Matemático para Motores Diesel</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Infraestructura</a>
+                        <div class="dropdown">
+                            <a href="infraestructura.html#ricardo" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Ricardo</a>
+                            <a href="infraestructura.html#petter" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Petter</a>
+                            <a href="infraestructura.html#lister" class="dropdown-item">Banco de Pruebas - Motor LISTER</a>
+                            <a href="infraestructura.html#honda" class="dropdown-item">Banco de Pruebas - Motor HONDA 3500</a>
+                            <a href="infraestructura.html#perkins" class="dropdown-item">Banco de Pruebas - Motor PERKINS</a>
+                            <a href="infraestructura.html#grieve" class="dropdown-item">Motor GRIEVE</a>
+                            <a href="infraestructura.html#sachs" class="dropdown-item">Banco de Pruebas CUSSONS – Motor SACHS</a>
+                            <a href="infraestructura.html#bomba" class="dropdown-item">Banco de Bombas de Inyección</a>
+                            <a href="infraestructura.html#freno" class="dropdown-item">Freno dinamométrico Soft Engine</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos Técnicos</a>
+                        <div class="dropdown">
+                            <a href="cursos.html#course-1" class="dropdown-item">MCI a gasolina - Estructura y función</a>
+                            <a href="cursos.html#course-2" class="dropdown-item">MCI diesel - Estructura y función</a>
+                            <a href="cursos.html#course-3" class="dropdown-item">MCI a gasolina - Diagnóstico de sistemas</a>
+                            <a href="cursos.html#course-4" class="dropdown-item">MCI diesel - Diagnóstico de sistemas</a>
+                            <a href="cursos.html#course-5" class="dropdown-item">MCI a gasolina - Reparación del motor</a>
+                            <a href="cursos.html#course-6" class="dropdown-item">MCI diesel - Reparación del motor</a>
+                            <a href="cursos.html#course-7" class="dropdown-item">Electricidad y Electrónica Automotriz</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link">Servicios</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="clientes.html" class="nav-link">Clientes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="informes.html" class="nav-link">Informes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Contáctenos</h1>
+                <p>Estamos a su disposición para atender sus consultas, brindar información sobre nuestros servicios y cursos, o programar una visita a nuestras instalaciones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-box">
+                    <h2>Informes</h2>
+                    
+                    <div class="info-item">
+                        <p>Cualquier tipo de información, la puede realizar personalmente en nuestro local, sito en:</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>Ubicación</h3>
+                        <p><strong>FACULTAD DE INGENIERÍA MECÁNICA - UNI</strong></p>
+                        <p><strong>INSTITUTO DE MOTORES DE COMBUSTIÓN INTERNA</strong></p>
+                        <p>(PABELLÓN DE MÁQUINAS TÉRMICAS E HIDRÁULICAS)</p>
+                        <p>Av. Túpac Amaru 210, Rímac, Lima 25 - PERÚ</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>Teléfonos</h3>
+                        <p>Teléfono: (511) 481-1070 (anexo 4429)</p>
+                        <p>Telefax: (511) 482-5927</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>Atención</h3>
+                        <p><strong>Srta. Adriana Tania Zevallos Alania</strong></p>
+                    </div>
+
+                    <div class="schedule-box">
+                        <h4>HORARIO DE ATENCIÓN: </h4>
+                        <p>🕐 De 8:00 a.m. a 1:00 p.m.</p>
+                        <p>🕑 De 2:00 p.m. a 4:30 p.m.</p>
+                    </div>
+
+                    <div class="contact-links">
+                        <div class="info-item">
+                            <h3>Correo Electrónico</h3>
+                            <a href="mailto:imci@uni.edu.pe">📧 imci@uni.edu.pe</a>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>Redes Sociales</h3>
+                            <a href="https://www.facebook.com/IMCI.FIM.UNI" target="_blank">👍 Síguenos en Facebook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="map-container">
+                    <h3>Nuestra Ubicación</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.0751224016543!2d-77.04711083810845!3d-12.025287235200624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf2499ea0011%3A0x1b2081d5b53d2cbf!2sIMCI%20FIM-UNI!5e0!3m2!1ses-419!2spe!4v1759532268951!5m2!1ses-419!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Instituto IMCI</h3>
+                    <p>Somos un centro de investigación especializado en motores de combustión interna, dedicado al desarrollo de tecnologías sostenibles y eficientes para el sector automotriz e industrial.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Infraestructura</h3>
+                    <ul>
+                        <li><a href="#">Bancos de Pruebas CUSSONS</a></li>
+                        <li><a href="#">Motores de Investigación</a></li>
+                        <li><a href="#">Equipos de Medición</a></li>
+                        <li><a href="#">Sistemas de Inyección</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Pruebas de Motores</a></li>
+                        <li><a href="#">Calibración de Equipos</a></li>
+                        <li><a href="#">Análisis de Rendimiento</a></li>
+                        <li><a href="#">Consultoría Técnica</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Av. Universitaria 1801, Lima - Perú</p>
+                    <p>📞 +51 1 234-5678</p>
+                    <p>📧 info@imci.edu.pe</p>
+                    <p>🌐 www.imci.edu.pe</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Instituto de Motores de Combustión Interna (IMCI). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
