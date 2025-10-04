@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestructura - IMCI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="contact-info">
+                    <span>📧 info@imci.edu.pe</span>
+                    <span>📞 482-5927</span>
+                </div>
+                <div class="header-links">
+                    <span>🕒 Lun - Vie: 8:00 - 18:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <div class="logo">IMCI</div>
+                        <div class="brand-text">
+                            <h1>IMCI</h1>
+                            <p>Instituto de Motores de Combustión Interna</p>
+                        </div>
+                    </div>
+                    
+                    <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Presentación</a>
+                        <div class="dropdown">
+                            <a href="index.html#institucional" class="dropdown-item">Institucional</a>
+                            <a href="index.html#objetivos" class="dropdown-item">Objetivos</a>
+                            <a href="index.html#historia" class="dropdown-item">Historia</a>
+                            <a href="index.html#organigrama" class="dropdown-item">Organigrama</a>
+                            <a href="index.html#miembros" class="dropdown-item">Miembros</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Proyectos I&D</a>
+                        <div class="dropdown">
+                            <a href="proyectos.html#altura" class="dropdown-item">Investigaciones en condiciones de altura</a>
+                            <a href="proyectos.html#biogas-interna" class="dropdown-item">El uso del Biogas en Motores de Combustión Interna</a>
+                            <a href="proyectos.html#biogas-diesel" class="dropdown-item">El uso del Biogas en Motores Diesel</a>
+                            <a href="proyectos.html#glp-diesel" class="dropdown-item">El uso de GLP en Motores Diesel</a>
+                            <a href="proyectos.html#biodiesel-diesel" class="dropdown-item">El uso de Biodiesel en Motores Diesel</a>
+                            <a href="proyectos.html#hidrodinamico" class="dropdown-item">Modelos Matemáticos de Procesos Hidrodinámicos</a>
+                            <a href="proyectos.html#stirling" class="dropdown-item">Motores Stirling</a>
+                            <a href="proyectos.html#electrogeno" class="dropdown-item">Grupo Electrógeno de 6 Kw a GLP</a>
+                            <a href="proyectos.html#moto-glp" class="dropdown-item">Mototaxis a GLP</a>
+                            <a href="proyectos.html#auto-glp" class="dropdown-item">Automóviles "Tico" a GLP</a>
+                            <a href="proyectos.html#mat-diesel" class="dropdown-item">Modelo Matemático para Motores Diesel</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Infraestructura</a>
+                        <div class="dropdown">
+                            <a href="infraestructura.html#ricardo" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Ricardo</a>
+                            <a href="infraestructura.html#petter" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Petter</a>
+                            <a href="infraestructura.html#lister" class="dropdown-item">Banco de Pruebas - Motor LISTER</a>
+                            <a href="infraestructura.html#honda" class="dropdown-item">Banco de Pruebas - Motor HONDA 3500</a>
+                            <a href="infraestructura.html#perkins" class="dropdown-item">Banco de Pruebas - Motor PERKINS</a>
+                            <a href="infraestructura.html#grieve" class="dropdown-item">Motor GRIEVE</a>
+                            <a href="infraestructura.html#sachs" class="dropdown-item">Banco de Pruebas CUSSONS – Motor SACHS</a>
+                            <a href="infraestructura.html#bomba" class="dropdown-item">Banco de Bombas de Inyección</a>
+                            <a href="infraestructura.html#freno" class="dropdown-item">Freno dinamométrico Soft Engine</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos Técnicos</a>
+                        <div class="dropdown">
+                            <a href="cursos.html#course-1" class="dropdown-item">MCI a gasolina - Estructura y función</a>
+                            <a href="cursos.html#course-2" class="dropdown-item">MCI diesel - Estructura y función</a>
+                            <a href="cursos.html#course-3" class="dropdown-item">MCI a gasolina - Diagnóstico de sistemas</a>
+                            <a href="cursos.html#course-4" class="dropdown-item">MCI diesel - Diagnóstico de sistemas</a>
+                            <a href="cursos.html#course-5" class="dropdown-item">MCI a gasolina - Reparación del motor</a>
+                            <a href="cursos.html#course-6" class="dropdown-item">MCI diesel - Reparación del motor</a>
+                            <a href="cursos.html#course-7" class="dropdown-item">Electricidad y Electrónica Automotriz</a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Clientes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Informes</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="equipment-grid">
+                <!-- Banco de Pruebas CUSSONS – Motor Ricardo -->
+                <div class="equipment-item" id="ricardo">
+                    <h3 class="equipment-title">Banco de Pruebas CUSSONS – Motor Ricardo</h3>
+                    <p class="equipment-description">
+                        Sistema de pruebas de alta precisión diseñado para el análisis completo de motores Ricardo. Permite realizar mediciones exactas de potencia, torque, consumo de combustible y emisiones contaminantes bajo condiciones controladas de laboratorio.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Motor:</strong> Ricardo de 4 tiempos</li>
+                            <li><strong>Potencia máx:</strong> 15 HP</li>
+                            <li><strong>Rango RPM:</strong> 500 - 4000 rpm</li>
+                            <li><strong>Precisión:</strong> ±0.1% de lectura</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Banco CUSSONS - Ricardo
+                    </div>
+                </div>
+
+                <!-- Banco de Pruebas CUSSONS – Motor Petter -->
+                <div class="equipment-item" id="petter">
+                    <h3 class="equipment-title">Banco de Pruebas CUSSONS – Motor Petter</h3>
+                    <p class="equipment-description">
+                        Banco especializado para motores Petter con capacidades avanzadas de medición y control. Ideal para estudios de eficiencia energética, análisis de combustión y optimización de parámetros operativos en motores diesel de pequeña cilindrada.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Motor:</strong> Petter Diesel</li>
+                            <li><strong>Cilindrada:</strong> 325 cc</li>
+                            <li><strong>Potencia máx:</strong> 5 HP</li>
+                            <li><strong>Sistema:</strong> Refrigeración por aire</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Banco CUSSONS - Petter
+                    </div>
+                </div>
+
+                <!-- Banco de Pruebas - Motor LISTER -->
+                <div class="equipment-item" id="lister">
+                    <h3 class="equipment-title">Banco de Pruebas - Motor LISTER</h3>
+                    <p class="equipment-description">
+                        Equipo robusto para evaluación de motores LISTER de aplicación industrial. Permite análisis detallados de rendimiento, durabilidad y comportamiento térmico. Especialmente útil para investigación en combustibles alternativos y biodiesel.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Motor:</strong> LISTER Diesel</li>
+                            <li><strong>Potencia máx:</strong> 12 HP</li>
+                            <li><strong>Cilindros:</strong> 2 cilindros</li>
+                            <li><strong>Aplicación:</strong> Industrial</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Banco LISTER
+                    </div>
+                </div>
+
+                <!-- Banco de Pruebas - Motor HONDA 3500 -->
+                <div class="equipment-item" id="honda">
+                    <h3 class="equipment-title">Banco de Pruebas - Motor HONDA 3500</h3>
+                    <p class="equipment-description">
+                        Sistema de pruebas para motores Honda de alta eficiencia. Diseñado para evaluación de generadores y aplicaciones estacionarias. Incluye medición de parámetros eléctricos y mecánicos simultáneos para análisis integral del sistema.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Motor:</strong> Honda GX200</li>
+                            <li><strong>Potencia máx:</strong> 6.5 HP</li>
+                            <li><strong>Generador:</strong> 3500W</li>
+                            <li><strong>Combustible:</strong> Gasolina</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Banco HONDA 3500
+                    </div>
+                </div>
+
+                <!-- Banco de Pruebas - Motor PERKINS -->
+                <div class="equipment-item" id="perkins">
+                    <h3 class="equipment-title">Banco de Pruebas - Motor PERKINS</h3>
+                    <p class="equipment-description">
+                        Banco de pruebas de alta capacidad para motores Perkins industriales. Permite estudios avanzados de inyección, combustión y emisiones. Equipado con sistemas de adquisición de datos en tiempo real para investigación de vanguardia.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Motor:</strong> Perkins 4.108</li>
+                            <li><strong>Cilindros:</strong> 4 en línea</li>
+                            <li><strong>Potencia máx:</strong> 50 HP</li>
+                            <li><strong>Torque máx:</strong> 165 Nm</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Banco PERKINS
+                    </div>
+                </div>
+
+                <!-- Motor GRIEVE -->
+                <div class="equipment-item" id="grieve">
+                    <h3 class="equipment-title">Motor GRIEVE</h3>
+                    <p class="equipment-description">
+                        Motor de investigación GRIEVE para estudios especializados en combustión y termodinámica. Diseñado para aplicaciones académicas con acceso visual a la cámara de combustión y medición de presiones internas de alta precisión.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Tipo:</strong> Monocilíndrico</li>
+                            <li><strong>Acceso visual:</strong> Cámara combustión</li>
+                            <li><strong>Medición:</strong> Presión interna</li>
+                            <li><strong>Uso:</strong> Investigación académica</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Motor GRIEVE
+                    </div>
+                </div>
+
+                <!-- Banco de Pruebas CUSSONS – Motor SACHS -->
+                <div class="equipment-item" id="sachs">
+                    <h3 class="equipment-title">Banco de Pruebas CUSSONS – Motor SACHS</h3>
+                    <p class="equipment-description">
+                        Sistema especializado para motores SACHS de 2 tiempos. Ideal para investigación en motores pequeños y aplicaciones de transporte urbano. Permite análisis detallados de mezcla aire-combustible y optimización de rendimiento.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Motor:</strong> SACHS 2T</li>
+                            <li><strong>Cilindrada:</strong> 50-125 cc</li>
+                            <li><strong>Aplicación:</strong> Motocicletas</li>
+                            <li><strong>Sistema:</strong> Mezcla lubricante</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Banco CUSSONS - SACHS
+                    </div>
+                </div>
+
+                <!-- Banco de Bombas de Inyección -->
+                <div class="equipment-item" id="bomba">
+                    <h3 class="equipment-title">Banco de Bombas de Inyección</h3>
+                    <p class="equipment-description">
+                        Equipo especializado para calibración y prueba de bombas de inyección diesel. Permite análisis de presión, caudal, temporización y pulverización. Esencial para investigación en sistemas de inyección de combustible y optimización de emisiones.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Presión máx:</strong> 400 bar</li>
+                            <li><strong>Caudal:</strong> 0-200 ml/min</li>
+                            <li><strong>Precisión:</strong> ±1% caudal</li>
+                            <li><strong>Aplicación:</strong> Bombas rotativas/lineales</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Banco Bombas Inyección
+                    </div>
+                </div>
+
+                <!-- Freno dinamométrico Soft Engine -->
+                <div class="equipment-item" id="freno">
+                    <h3 class="equipment-title">Freno Dinamométrico Soft Engine</h3>
+                    <p class="equipment-description">
+                        Sistema avanzado de medición de potencia y torque con control por software. Permite caracterización completa de motores con mapas de rendimiento automáticos. Incluye adquisición de datos en tiempo real y análisis estadístico avanzado.
+                    </p>
+                    <div class="equipment-specs">
+                        <h4>Especificaciones Técnicas:</h4>
+                        <ul class="specs-list">
+                            <li><strong>Potencia máx:</strong> 100 HP</li>
+                            <li><strong>Torque máx:</strong> 300 Nm</li>
+                            <li><strong>Velocidad máx:</strong> 6000 rpm</li>
+                            <li><strong>Software:</strong> Control automático</li>
+                        </ul>
+                    </div>
+                    <div class="equipment-image">
+                        Dinamómetro Soft Engine
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Instituto IMCI</h3>
+                    <p>Somos un centro de investigación especializado en motores de combustión interna, dedicado al desarrollo de tecnologías sostenibles y eficientes para el sector automotriz e industrial.</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">🐦</a>
+                        <a href="#">💼</a>
+                        <a href="#">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>📍 Av. Universitaria 1801, Lima - Perú</p>
+                    <p>📞 482-5927</p>
+                    <p>📞 481-1070 #4429</p>
+                    <p>Horarios:<br>
+                    Lunes a Viernes: 8:00 - 18:00<br>
+                    Sábados: 8:00 - 13:00</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p> &copy; 2025 Instituto de Motores de Combustión Interna (IMCI). Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
