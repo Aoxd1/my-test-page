@@ -62,7 +62,7 @@ body {
 .logo {
     width: 5rem;
     height: 5rem;
-    background-image: url(image/logo.jpeg);
+    background-image: url(image/logo.jpg);
     border-radius: 50%;
     display: flex;
     box-shadow: 0 4px 15px rgba(192, 192, 192, 0.4);
@@ -1598,4 +1598,5 @@ html {
     background: #dc3545;
     border-color: #dc3545;
     color: white;
+
 }
