@@ -13,7 +13,7 @@ body {
 
 /* Header */
 .header {
-    background: black;
+    background: #8a2828;
     color: black;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: relative;
@@ -71,6 +71,29 @@ body {
     background-position: center;
 }
 
+.social-section {
+    display: flex;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    width: 30px;
+}
+
 .brand-text h1 {
     font-size: 1.8em;
     font-weight: 700;
@@ -95,6 +118,7 @@ body {
 /* Navigation */
 .navbar {
     background: linear-gradient(135deg,#b4b4b4 0%,#e8e8e8 20%,#c0c0c0 40%,#f5f5f5 50%,#c0c0c0 60%,#e8e8e8 80%,#b4b4b4 100%);
+    border-top: 2px solid #909090;
 }
 
 .nav-menu {
@@ -201,12 +225,20 @@ body {
     z-index: 1;
 }
 
+.page-header .container {
+    background: rgb(0 0 0 / 30%);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
 /* Navigation Pills */
 .section-nav {
     background: white;
     padding: 30px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 500;
+    position: sticky;
+    top: 0;
 }
 
 .nav-pills {
@@ -313,7 +345,7 @@ body {
     transform: translateX(-50%);
     width: 4px;
     height: 100%;
-    background: linear-gradient(to bottom, black, #3a5a7a);
+    background: linear-gradient(to bottom, black, #8a2828);
     border-radius: 2px;
 }
 
@@ -426,7 +458,7 @@ body {
 .member-avatar {
     width: 100%;
     height: 200px;
-    background: linear-gradient(135deg, black, #3a5a7a);
+    background: linear-gradient(135deg, black, #8a2828);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -532,7 +564,7 @@ body {
 
 .equipment-image:hover {
     border-color: #d4af37;
-    background: linear-gradient(135deg, black 0%, #3a5a7a 100%);
+    background: linear-gradient(135deg, black 0%, #8a2828 100%);
     color: white;
 }
 
@@ -657,7 +689,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, black, #3a5a7a);
+    background: linear-gradient(135deg, black, #8a2828);
     color: white;
     font-size: 4em;
     font-weight: bold;
@@ -667,10 +699,10 @@ body {
     opacity: 1;
 }
 
-.carousel-slide:nth-child(1) { background: linear-gradient(135deg, black, #3a5a7a); }
+.carousel-slide:nth-child(1) { background: linear-gradient(135deg, black, #8a2828); }
 .carousel-slide:nth-child(2) { background: linear-gradient(135deg, #c0c0c0, #8a8a8a); }
 .carousel-slide:nth-child(3) { background: linear-gradient(135deg, #d4af37, #b8860b); }
-.carousel-slide:nth-child(4) { background: linear-gradient(135deg, #2c4a6d, black); }
+.carousel-slide:nth-child(4) { background: linear-gradient(135deg, #8a2828, black); }
 
 .carousel-nav {
     position: absolute;
@@ -753,7 +785,7 @@ body {
 .overview-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, black 0%, #3a5a7a 100%);
+    background: linear-gradient(135deg, black 0%, #8a2828 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -819,7 +851,7 @@ body {
 }
 
 .course-header {
-    background: linear-gradient(135deg, black 0%, #3a5a7a 100%);
+    background: linear-gradient(135deg, black 0%, #8a2828 100%);
     color: white;
     padding: 25px 30px;
     position: relative;
@@ -944,7 +976,7 @@ body {
 }
 
 .btn-informes {
-    background: linear-gradient(135deg, black 0%, #2c4a6d 100%);
+    background: linear-gradient(135deg, black 0%, #8a2828 100%);
     color: white;
 }
 
@@ -1013,7 +1045,7 @@ body {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, black 0%, #3a5a7a 100%);
+    background: linear-gradient(135deg, black 0%, #8a2828 100%);
     color: white;
     padding: 80px 0;
     text-align: center;
@@ -1149,7 +1181,7 @@ body {
     width: 16rem;
     height: 18rem;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    background: linear-gradient(135deg, black 0%, #3a5a7a 100%);
+    background: linear-gradient(135deg, black 0%, #8a2828 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1314,7 +1346,7 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, black 0%, #2c4a6d 100%);
+    background: linear-gradient(135deg, black 0%, #8a2828 100%);
     color: white;
     padding: 50px 0 20px;
     margin-top: 50px;
