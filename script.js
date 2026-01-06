@@ -98,7 +98,7 @@ function toggleMobileMenu() {
     navMenu.classList.toggle('active');
 }
 
-// Función para abrir el preview de imagen (similar al código de referencia)
+// Función para abrir el preview de imagen
 function openPreview(previewId) {
     const preview = document.getElementById(previewId);
     preview.style.display = 'block';
@@ -133,3 +133,99 @@ document.addEventListener('keydown', function(event) {
         document.body.style.overflow = 'auto';
     }
 });
+
+// Script para hacer el navbar sticky
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
+    const header = document.querySelector('.header');
+    
+    // Guardar la posición inicial del navbar
+    const navbarOffset = navbar.offsetTop;
+    
+    // Crear un placeholder para evitar saltos en el contenido
+    const placeholder = document.createElement('div');
+    placeholder.style.display = 'none';
+    placeholder.style.height = navbar.offsetHeight + 'px';
+    navbar.parentNode.insertBefore(placeholder, navbar.nextSibling);
+    
+    function handleScroll() {
+        if (window.pageYOffset >= navbarOffset) {
+            navbar.classList.add('fixed');
+            placeholder.style.display = 'block';
+        } else {
+            navbar.classList.remove('fixed');
+            placeholder.style.display = 'none';
+        }
+    }
+    
+    // Ejecutar inmediatamente al cargar la página
+    handleScroll();
+    
+    window.addEventListener('scroll', handleScroll);
+});
+
+// Inicializar Swiper
+var swiper = new Swiper(".mySwiper-1", {
+    direction: "horizontal",
+    loop: true,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+
+    autoplay: {
+        delay: 4000
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+    }
+});
+
+// Función para inicializar Swiper con la dirección correcta
+function initSwiper() {
+    var swiper = new Swiper(".mySwiper-3", {
+        direction: window.innerWidth <= 768 ? "horizontal" : "vertical", // Cambiar la dirección según el tamaño de la pantalla
+        loop: true,
+        autoplay: {
+            delay: 7000, // 7 segundos de intervalo
+        },
+        slidesPerView: 1, // Solo muestra una imagen a la vez
+        spaceBetween: 0, // Sin espacio entre las slides
+        pagination: {
+            el: ".swiper-pagination",
+            type: "bullets", // Paginación en forma de puntos
+            clickable: true,
+        },
+    });
+
+    return swiper;
+}
+
+// Inicializa el Swiper al cargar la página
+var swiper = initSwiper();
+
+// Actualiza la configuración del Swiper al cambiar el tamaño de la ventana
+window.addEventListener('resize', function () {
+    swiper.destroy(true, true); // Destruye el Swiper actual
+    swiper = initSwiper(); // Reinicializa el Swiper con la nueva configuración
+});
+
+// Boton para subir
+// Mostrar el botón después de desplazarse una cierta cantidad de píxeles (300px en este caso)
+window.onscroll = function() {
+    var scrollBtn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        scrollBtn.style.display = "flex";  // Muestra el botón
+    } else {
+        scrollBtn.style.display = "none";  // Oculta el botón
+    }
+};
+
+// Función para desplazarse hacia arriba
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
