@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - IMCI | Instituto de Motores de Combustión Interna</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -35,24 +36,19 @@
                     <!-- Redes sociales -->
                     <div class="social-section">
                         <div class="socials">
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com/IMCI.FIM.UNI" target="_blank">
                                 <div class="social">
-                                    <img src="image/social-icon-1.svg" alt="Facebook">
+                                    <img src="image/2023_Facebook_icon.svg" alt="Facebook">
                                 </div>
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com/imci_fim.uni/" target="_blank">
                                 <div class="social">
-                                    <img src="image/social-icon-2.svg" alt="LinkedIn">
-                                </div>
-                            </a>
-                            <a href="#" target="_blank">
-                                <div class="social">
-                                    <img src="image/social-icon-3.svg" alt="YouTube">
+                                    <img src="image/Instagram_logo_2016.svg" alt="Instagram">
                                 </div>
                             </a>
                             <a href="https://fim.uni.edu.pe/" target="_blank">
                                 <div class="social uni">
-                                    <img src="image/placeholder.jpeg" alt="UNI" width="50px">
+                                    <img src="image/Uni-logo.png" alt="UNI">
                                 </div>
                             </a>
                         </div>
@@ -69,7 +65,7 @@
             <div class="container">
                 <ul class="nav-menu" id="navMenu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Presentación</a>
+                        <a href="index.html" class="nav-link">Presentación</a>
                         <div class="dropdown">
                             <a href="index.html#institucional" class="dropdown-item">Institucional</a>
                             <a href="index.html#objetivos" class="dropdown-item">Objetivos</a>
@@ -80,47 +76,97 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Proyectos I&D</a>
+                        <a href="proyectos.html" class="nav-link">Proyectos I&D</a>
                         <div class="dropdown">
-                            <a href="proyectos.html#altura" class="dropdown-item">Investigaciones en condiciones de altura</a>
-                            <a href="proyectos.html#biogas-interna" class="dropdown-item">El uso del Biogas en Motores de Combustión Interna</a>
-                            <a href="proyectos.html#biogas-diesel" class="dropdown-item">El uso del Biogas en Motores Diesel</a>
-                            <a href="proyectos.html#glp-diesel" class="dropdown-item">El uso de GLP en Motores Diesel</a>
-                            <a href="proyectos.html#biodiesel-diesel" class="dropdown-item">El uso de Biodiesel en Motores Diesel</a>
-                            <a href="proyectos.html#hidrodinamico" class="dropdown-item">Modelos Matemáticos de Procesos Hidrodinámicos</a>
-                            <a href="proyectos.html#stirling" class="dropdown-item">Motores Stirling</a>
-                            <a href="proyectos.html#electrogeno" class="dropdown-item">Grupo Electrógeno de 6 Kw a GLP</a>
-                            <a href="proyectos.html#moto-glp" class="dropdown-item">Mototaxis a GLP</a>
-                            <a href="proyectos.html#auto-glp" class="dropdown-item">Automóviles "Tico" a GLP</a>
-                            <a href="proyectos.html#mat-diesel" class="dropdown-item">Modelo Matemático para Motores Diesel</a>
+                            <div class="dropdown-item has-submenu">
+                                Investigaciones
+                                <div class="submenu">
+                                    <a href="proyectos.html#altura" class="submenu-item">Investigaciones en condiciones de altura</a>
+                                    <a href="proyectos.html#hidrodinamico" class="submenu-item">Modelos Matemáticos de Procesos Hidrodinámicos</a>
+                                    <a href="proyectos.html#mat-diesel" class="submenu-item">Modelo Matemático para Motores Diesel</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item has-submenu">
+                                Uso de Combustibles Alternativos
+                                <div class="submenu">
+                                    <a href="proyectos.html#biogas-interna" class="submenu-item">El uso del Biogas en Motores de Combustión Interna</a>
+                                    <a href="proyectos.html#biogas-diesel" class="submenu-item">El uso del Biogas en Motores Diesel</a>
+                                    <a href="proyectos.html#glp-diesel" class="submenu-item">El uso de GLP en Motores Diesel</a>
+                                    <a href="proyectos.html#biodiesel-diesel" class="submenu-item">El uso de Biodiesel en Motores Diesel</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item has-submenu">
+                                Proyectos de Conversión
+                                <div class="submenu">
+                                    <a href="proyectos.html#electrogeno" class="submenu-item">Grupo Electrógeno de 6 Kw a GLP</a>
+                                    <a href="proyectos.html#moto-glp" class="submenu-item">Mototaxis a GLP</a>
+                                    <a href="proyectos.html#auto-glp" class="submenu-item">Automóviles "Tico" a GLP</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item has-submenu">
+                                Otros Proyectos
+                                <div class="submenu">
+                                    <a href="proyectos.html#stirling" class="submenu-item">Motores Stirling</a>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Infraestructura</a>
+                        <a href="infraestructura.html" class="nav-link">Infraestructura</a>
                         <div class="dropdown">
-                            <a href="infraestructura.html#ricardo" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Ricardo</a>
-                            <a href="infraestructura.html#petter" class="dropdown-item">Banco de Pruebas CUSSONS – Motor Petter</a>
-                            <a href="infraestructura.html#lister" class="dropdown-item">Banco de Pruebas - Motor LISTER</a>
-                            <a href="infraestructura.html#honda" class="dropdown-item">Banco de Pruebas - Motor HONDA 3500</a>
-                            <a href="infraestructura.html#perkins" class="dropdown-item">Banco de Pruebas - Motor PERKINS</a>
-                            <a href="infraestructura.html#grieve" class="dropdown-item">Motor GRIEVE</a>
-                            <a href="infraestructura.html#sachs" class="dropdown-item">Banco de Pruebas CUSSONS – Motor SACHS</a>
-                            <a href="infraestructura.html#bomba" class="dropdown-item">Banco de Bombas de Inyección</a>
-                            <a href="infraestructura.html#freno" class="dropdown-item">Freno dinamométrico Soft Engine</a>
+                            <div class="dropdown-item has-submenu">
+                                Bancos de Pruebas CUSSONS
+                                <div class="submenu">
+                                    <a href="infraestructura.html#ricardo" class="submenu-item">Motor Ricardo</a>
+                                    <a href="infraestructura.html#petter" class="submenu-item">Motor Petter</a>
+                                    <a href="infraestructura.html#sachs" class="submenu-item">Motor SACHS</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item has-submenu">
+                                Otros Bancos de Pruebas
+                                <div class="submenu">
+                                    <a href="infraestructura.html#lister" class="submenu-item">Motor LISTER</a>
+                                    <a href="infraestructura.html#honda" class="submenu-item">Motor HONDA 3500</a>
+                                    <a href="infraestructura.html#perkins" class="submenu-item">Motor PERKINS</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item has-submenu">
+                                Equipamiento Especializado
+                                <div class="submenu">
+                                    <a href="infraestructura.html#grieve" class="submenu-item">Motor GRIEVE</a>
+                                    <a href="infraestructura.html#bomba" class="submenu-item">Banco de Bombas de Inyección</a>
+                                    <a href="infraestructura.html#freno" class="submenu-item">Freno dinamométrico Soft Engine</a>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Cursos Técnicos</a>
+                        <a href="cursos.html" class="nav-link">Cursos Técnicos</a>
                         <div class="dropdown">
-                            <a href="cursos.html#course-1" class="dropdown-item">MCI a gasolina - Estructura y función</a>
-                            <a href="cursos.html#course-2" class="dropdown-item">MCI diesel - Estructura y función</a>
-                            <a href="cursos.html#course-3" class="dropdown-item">MCI a gasolina - Diagnóstico de sistemas</a>
-                            <a href="cursos.html#course-4" class="dropdown-item">MCI diesel - Diagnóstico de sistemas</a>
-                            <a href="cursos.html#course-5" class="dropdown-item">MCI a gasolina - Reparación del motor</a>
-                            <a href="cursos.html#course-6" class="dropdown-item">MCI diesel - Reparación del motor</a>
-                            <a href="cursos.html#course-7" class="dropdown-item">Electricidad y Electrónica Automotriz</a>
+                            <div class="dropdown-item has-submenu">
+                                MCI a Gasolina
+                                <div class="submenu">
+                                    <a href="cursos.html#course-1" class="submenu-item">Estructura y función</a>
+                                    <a href="cursos.html#course-3" class="submenu-item">Diagnóstico de sistemas</a>
+                                    <a href="cursos.html#course-5" class="submenu-item">Reparación del motor</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item has-submenu">
+                                MCI Diesel
+                                <div class="submenu">
+                                    <a href="cursos.html#course-2" class="submenu-item">Estructura y función</a>
+                                    <a href="cursos.html#course-4" class="submenu-item">Diagnóstico de sistemas</a>
+                                    <a href="cursos.html#course-6" class="submenu-item">Reparación del motor</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item has-submenu">
+                                Electricidad y Electrónica Automotriz
+                                <div class="submenu">
+                                    <a href="cursos.html#course-7" class="submenu-item">Curso completo</a>
+                                </div>
+                            </div>
                         </div>
                     </li>
                     
@@ -148,24 +194,75 @@
     <main class="main-content">
         <!-- Page Header -->
         <section class="page-header">
-            <div class="container">
-                <h1 class="fade-in-up">Presentación Institucional</h1>
-                <p class="fade-in-up">Conoce más sobre nuestra historia, objetivos y el equipo que impulsa la investigación en motores de combustión interna</p>
-            </div>
-        </section>
+            <!-- Swiper -->
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&h=1080&fit=crop" alt="Laboratorio" class="slide-image">
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h2 class="slide-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                <p class="slide-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorum assumenda quas aliquam laudantium. Porro nulla error voluptatem recusandae corporis, voluptate quaerat, sint, fugiat id nobis ea vel. Assumenda, adipisci.
+                                </p>
+                                <a href="#" class="slide-button">CONOCER MÁS</a>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- Section Navigation -->
-        <div class="section-nav">
-            <div class="container">
-                <div class="nav-pills">
-                    <a href="#institucional" class="nav-pill active">Institucional</a>
-                    <a href="#objetivos" class="nav-pill">Objetivos</a>
-                    <a href="#historia" class="nav-pill">Historia</a>
-                    <a href="#organigrama" class="nav-pill">Organigrama</a>
-                    <a href="#miembros" class="nav-pill">Miembros</a>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&h=1080&fit=crop" alt="Tecnología" class="slide-image">
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h2 class="slide-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                <p class="slide-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorum assumenda quas aliquam laudantium. Porro nulla error voluptatem recusandae corporis, voluptate quaerat, sint, fugiat id nobis ea vel. Assumenda, adipisci.
+                                </p>
+                                <a href="#" class="slide-button">VER SERVICIOS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=1080&fit=crop" alt="Capacitación" class="slide-image">
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h2 class="slide-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                <p class="slide-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorum assumenda quas aliquam laudantium. Porro nulla error voluptatem recusandae corporis, voluptate quaerat, sint, fugiat id nobis ea vel. Assumenda, adipisci.
+                                </p>
+                                <a href="#" class="slide-button">VER CURSOS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?w=1920&h=1080&fit=crop" alt="Innovación" class="slide-image">
+                        <div class="slide-overlay">
+                            <div class="slide-content">
+                                <h2 class="slide-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                <p class="slide-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto dolorum assumenda quas aliquam laudantium. Porro nulla error voluptatem recusandae corporis, voluptate quaerat, sint, fugiat id nobis ea vel. Assumenda, adipisci.
+                                </p>
+                                <a href="#" class="slide-button">CONTACTAR</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Navegación -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <!-- Paginación -->
+                <div class="swiper-pagination"></div>
             </div>
-        </div>
+
+        </section>
 
         <!-- Institucional Section -->
         <section id="institucional" class="content-section">
@@ -358,6 +455,8 @@
         </section>
     </main>
 
+    <button class="btn-1" id="scrollToTopBtn" title="Subir al inicio" onclick="scrollToTop()"></button>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -385,11 +484,12 @@
             </div>
             
             <div class="footer-bottom">
-                <p> &copy; 2025 Instituto de Motores de Combustión Interna (IMCI). Todos los derechos reservados.</p>
+                <p> &copy; 2026 Instituto de Motores de Combustión Interna (IMCI). Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 
 </body>
