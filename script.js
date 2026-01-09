@@ -134,27 +134,37 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-// Script para hacer el navbar sticky
+// Script para hacer el header-main y navbar sticky
 document.addEventListener('DOMContentLoaded', function() {
+    const headerMain = document.querySelector('.header-main');
     const navbar = document.querySelector('.navbar');
-    const header = document.querySelector('.header');
     
-    // Guardar la posición inicial del navbar
-    const navbarOffset = navbar.offsetTop;
+    // Guardar la posición inicial del header-main
+    const headerOffset = headerMain.offsetTop;
     
-    // Crear un placeholder para evitar saltos en el contenido
-    const placeholder = document.createElement('div');
-    placeholder.style.display = 'none';
-    placeholder.style.height = navbar.offsetHeight + 'px';
-    navbar.parentNode.insertBefore(placeholder, navbar.nextSibling);
+    // Crear placeholders para evitar saltos en el contenido
+    const headerPlaceholder = document.createElement('div');
+    headerPlaceholder.className = 'header-placeholder';
+    headerPlaceholder.style.height = (headerMain.offsetHeight + navbar.offsetHeight) + 'px';
+    headerMain.parentNode.insertBefore(headerPlaceholder, headerMain.nextSibling);
     
     function handleScroll() {
-        if (window.pageYOffset >= navbarOffset) {
+        const headerHeight = headerMain.offsetHeight;
+        
+        if (window.pageYOffset >= headerOffset) {
+            // Activar modo fixed
+            headerMain.classList.add('fixed');
             navbar.classList.add('fixed');
-            placeholder.style.display = 'block';
+            headerPlaceholder.classList.add('active');
+            
+            // Ajustar la posición del navbar debajo del header
+            navbar.style.top = headerMain.offsetHeight + 'px';
         } else {
+            // Desactivar modo fixed
+            headerMain.classList.remove('fixed');
             navbar.classList.remove('fixed');
-            placeholder.style.display = 'none';
+            headerPlaceholder.classList.remove('active');
+            navbar.style.top = '0';
         }
     }
     
@@ -162,6 +172,27 @@ document.addEventListener('DOMContentLoaded', function() {
     handleScroll();
     
     window.addEventListener('scroll', handleScroll);
+});
+
+// Boton para subir
+window.onscroll = function() {
+    var scrollBtn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        scrollBtn.style.display = "flex";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var scrollBtn = document.getElementById("scrollToTopBtn");
+    if (scrollBtn) {
+        scrollBtn.addEventListener('click', scrollToTop);
+    }
 });
 
 // Inicializar Swiper
