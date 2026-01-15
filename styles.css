@@ -118,7 +118,7 @@ body {
 .logo {
     width: 60px;
     height: 80px;
-    background-image: url(image/LOGO_IMCI.png);
+    background-image: url(image/Logo/LOGO_IMCI.png);
     border-radius: 50%;
     display: flex;
     background-size: contain;
@@ -172,6 +172,7 @@ div.social.uni img {
 
 .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -223,7 +224,6 @@ div.social.uni img {
     top: 100%;
     left: 0;
     background: #909090;
-    min-width: 300px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     opacity: 0;
     visibility: hidden;
@@ -279,13 +279,12 @@ div.social.uni img {
     left: 100%;
     top: 0;
     background: #707070;
-    min-width: 350px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     opacity: 0;
     visibility: hidden;
     transform: translateX(-10px);
     transition: all 0.3s ease;
-    border-radius: 0 10px 10px 0;
+    border-radius: 8px;
     z-index: 1000;
 }
 
@@ -453,6 +452,7 @@ div.swiper-button-prev {
     height: 50px;
     border-radius: 50%;
     transition: all 0.3s ease;
+    font-size: 2rem;
 }
 
 div.swiper-button-next:hover,
@@ -463,6 +463,11 @@ div.swiper-button-prev:hover {
 div.swiper-button-next::after,
 div.swiper-button-prev::after {
     font-size: 20px;
+}
+
+.swiper-button-next svg, .swiper-button-prev svg {
+    width: 60%!important;
+    height: 60%!important;
 }
 
 /* Paginación */
@@ -551,7 +556,7 @@ div.swiper-pagination-bullet-active {
 section#objetivos.content-section .content-card{
     border: 2px solid #8a2828;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem;
 }
 
 /* Timeline for Historia */
@@ -1440,6 +1445,7 @@ section#objetivos.content-section .content-card{
 
 .info-item {
     margin-bottom: 25px;
+    display: grid;
 }
 
 .info-item h3 {
@@ -1605,6 +1611,12 @@ section#objetivos.content-section .content-card{
     transform: translateY(-3px);
 }
 
+.social-links img {
+    width: 100%;
+    background: white;
+    border-radius: 50%;
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 20px;
@@ -1645,35 +1657,197 @@ section#objetivos.content-section .content-card{
 
 /* Responsive */
 @media (max-width: 768px) {
+    /* Mostrar el botón móvil */
     .mobile-toggle {
+        display: grid;
+        place-items: center;
+        position: fixed;
+        right: 3rem;
+        top: 10px;
+        z-index: 10002;
+        width: 48px;
+        height: 48px;
+        background: transparent;
+        color: #fff;
+        border-radius: 8px;
+        font-size: 22px;
+    }
+
+    /* Transformamos la navbar para ocupar la pantalla */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: #2b2b2b;
+      z-index: 10001;
+
+      padding-top: 74px;
+      padding-left: 18px;
+      padding-right: 18px;
+
+      overflow-y: auto;
+      transition: left .35s cubic-bezier(.4,0,.2,1);
+      will-change: left;
+    }
+
+    /* Cuando está abierto */
+    .navbar.open {
+        left: 0;
+    }
+
+    /* Forzar el nav-menu a vertical en móvil */
+    .nav-menu {
+        display: block !important;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 8px 0 28px;
+        list-style: none;
+    }
+
+    .nav-item {
+        width: 100%;
+        margin: 8px 0;
+        border: 2px solid #ffd700;
+        border-radius: 10px;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        border-radius: 12px;
+        background: transparent;
+        text-decoration: none;
+        transition: background .15s, transform .12s;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link.active {
+        background: rgba(255,255,255,0.08);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.22) inset;
+    }
+
+    /* ===============================
+    DROPDOWNS MOBILE (ACORDEÓN)
+    ================================ */
+
+    .dropdown {
+        position: static !important;
+        background: transparent;
+        box-shadow: none;
+        display: none;
+    }
+
+    /* 🔒 FORZAR DROPDOWNS SIEMPRE EN FLUJO (NUNCA LATERAL) */
+    .dropdown,
+    .submenu {
+        position: static !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        transform: none !important;
+        float: none !important;
+        width: 100%;
+    }
+
+    .submenu-toggle {
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+        background-color: gray;
+    }
+
+    .dropdown-item.has-submenu::after {
+        content: '';
+        display: none;
+    }
+
+    .dropdown-item.has-submenu.is-open .submenu {
+        display: inline;
+    }
+
+    /* cuando el nav-item se expande */
+    .nav-item.expanded > .dropdown {
         display: block;
     }
 
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(30, 58, 92, 0.95);
+    /* items del dropdown */
+    .dropdown .dropdown-item,
+    .dropdown .submenu-item,
+    .dropdown a {
+        display: block;
+        padding: 12px 18px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 15px;
     }
 
-    .nav-menu.active {
-        display: flex;
+    /* item con submenu */
+    .dropdown-item.has-submenu {
+        padding-bottom: 6px;
     }
 
-    .dropdown {
-        position: static;
+    /* submenu */
+    .dropdown .submenu {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height .3s ease, opacity .2s ease;
+    }
+
+    /* abierto */
+    .dropdown-item.is-open > .submenu {
         opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        background: rgba(30, 58, 92, 0.8);
     }
 
-    .section-nav {
-        top: 140px;
+    /* botón debajo */
+    .dropdown-item .sub-toggle-below {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 6px;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.04);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-item .sub-toggle-below:hover {
+        background: rgba(255,255,255,0.08);
+    }
+
+    /* flecha */
+    .dropdown-item .sub-toggle-below .arrow {
+        font-size: 18px;
+        transition: transform .2s ease;
+    }
+
+    /* rotación */
+    .dropdown-item.is-open .sub-toggle-below .arrow {
+        transform: rotate(180deg);
+    }
+
+    /* Ajustes visuales finales */
+    .logo { /* reducir logo si desea que aparezca en el menú */
+        width: 46px;
+        height: 60px;
+    }
+
+    .container {
+        overflow-x: hidden;
     }
 
     .page-header h1 {
@@ -1694,15 +1868,6 @@ section#objetivos.content-section .content-card{
 
     .slide-overlay {
         padding: 40px 20px 30px;
-    }
-
-    .nav-pills {
-        gap: 10px;
-    }
-
-    .nav-pill {
-        padding: 8px 15px;
-        font-size: 0.9em;
     }
 
     .timeline::before {
@@ -1727,14 +1892,29 @@ section#objetivos.content-section .content-card{
         align-items: center;
     }
 
+    .eventos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .header-content {
         flex-direction: column;
         gap: 15px;
     }
 
+    .contact-grid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .contact-info {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .contact-info-box {
+        border: 0;
     }
 
     .hero-content h2 {
@@ -1791,9 +1971,30 @@ section#objetivos.content-section .content-card{
         font-size: 24px;
     }
 
+    .nav-link:hover, .nav-link.active {
+        background-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    .services-container {
+        display: flex;
+    }
+
+    .hexagon-container {
+        display: none;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
     .footer-content {
-        grid-template-columns: 1fr;
         gap: 30px;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
     }
 }
 
